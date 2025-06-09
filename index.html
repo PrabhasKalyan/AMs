@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associate Members 2025 - Entrepreneurship Cell IIT Kharagpur</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #e0e0e0;
+            margin-bottom: 40px;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .logo-subtext {
+            font-size: 18px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .welcome-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .category-section {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #4CAF50;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .students-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .students-table thead {
+            background: #808080;
+            color: white;
+        }
+
+        .students-table th {
+            padding: 15px 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            border-right: 1px solid #999;
+        }
+
+        .students-table th:last-child {
+            border-right: none;
+        }
+
+        .students-table tbody tr {
+            transition: background-color 0.2s ease;
+        }
+
+        .students-table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .students-table tbody tr:hover {
+            background-color: #e8f5e8;
+        }
+
+        .students-table td {
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .students-table td:last-child {
+            border-right: none;
+        }
+
+        .students-table td:first-child {
+            font-weight: 600;
+            color: #666;
+        }
+
+        .students-table td:nth-child(2) {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .students-table td:nth-child(3) {
+            font-family: 'Courier New', monospace;
+            color: #666;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .welcome-title {
+                font-size: 2rem;
+            }
+            
+            .students-table {
+                font-size: 14px;
+            }
+            
+            .students-table th,
+            .students-table td {
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <div>
+                    <img src="./E-Cell-Logo-iit-karagpur.png" style="height: 5vw;" alt="">
+                </div>
+            </div>
+            <h1 class="welcome-title">Welcome Aboard!</h1>
+        </div>
+
+        <div id="coreSection" class="category-section">
+            <h2 class="category-title">Core Team</h2>
+            <table class="students-table" id="coreTable">
+                <thead>
+                    <tr>
+                        <th>S No.</th>
+                        <th>Name</th>
+                        <th>Roll No.</th>
+                    </tr>
+                </thead>
+                <tbody id="coreTableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <div id="designSection" class="category-section">
+            <h2 class="category-title">Design Team</h2>
+            <table class="students-table" id="designTable">
+                <thead>
+                    <tr>
+                        <th>S No.</th>
+                        <th>Name</th>
+                        <th>Roll No.</th>
+                    </tr>
+                </thead>
+                <tbody id="designTableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <div id="webSection" class="category-section">
+            <h2 class="category-title">Web Team</h2>
+            <table class="students-table" id="webTable">
+                <thead>
+                    <tr>
+                        <th>S No.</th>
+                        <th>Name</th>
+                        <th>Roll No.</th>
+                    </tr>
+                </thead>
+                <tbody id="webTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Student data parsed from the document
+        const studentsData = [
+            // Core students
+            { name: "Aaron Jason Baptist", rollNo: "24AI10015", category: "Core" },
+            { name: "Aayushi Umariya", rollNo: "24GG10005", category: "Core" },
+            { name: "Abhinav Gentyal", rollNo: "24BT10025", category: "Core" },
+            { name: "Aditya Arakharao", rollNo: "24AI10009", category: "Core" },
+            { name: "Alok Kumar Gupta", rollNo: "24MI10020", category: "Core" },
+            { name: "Anany Porwal", rollNo: "24MI10021", category: "Core" },
+            { name: "Anit Kumar", rollNo: "24SD14001", category: "Core" },
+            { name: "Anjali Chenga", rollNo: "24CE10004", category: "Core" },
+            { name: "Anubhav Gupta", rollNo: "24AG10021", category: "Core" },
+            { name: "Anushka Jain", rollNo: "24HS10015", category: "Core" },
+            { name: "Aritra Biswas", rollNo: "24CH10001", category: "Core" },
+            { name: "Arush Sharma", rollNo: "24MI10024", category: "Core" },
+            { name: "Aryan Thakur", rollNo: "24GG10010", category: "Core" },
+            { name: "Ashish", rollNo: "24CY10012", category: "Core" },
+            { name: "Chaitanya Ghuge", rollNo: "24ME10075", category: "Core" },
+            { name: "Daniyal Khan", rollNo: "24MF10026", category: "Core" },
+            { name: "Deepak Jangir", rollNo: "224NA10023", category: "Core" },
+            { name: "Devang C Parmar", rollNo: "24MF10028", category: "Core" },
+            { name: "Dipansu Kumar Mahato", rollNo: "24EC10011", category: "Core" },
+            { name: "Ehina Gupta Sarma", rollNo: "24MT10037", category: "Core" },
+            { name: "Gajendra Yadav", rollNo: "24MI10038", category: "Core" },
+            { name: "Garv", rollNo: "24MI10039", category: "Core" },
+            { name: "Geeta Sanjanna Gatreddi", rollNo: "24CE10056", category: "Core" },
+            { name: "Gopanshu Garg", rollNo: "24MT10039", category: "Core" },
+            { name: "Harikesh Sharma", rollNo: "24MA10036", category: "Core" },
+            { name: "Harshita Garg", rollNo: "24MF10031", category: "Core" },
+            { name: "Himanshu Kumar", rollNo: "24MT10042", category: "Core" },
+            { name: "Hitankar Jain", rollNo: "24BT10028", category: "Core" },
+            { name: "Ishika Agrawal", rollNo: "24MI10048", category: "Core" },
+            { name: "Jateen Ramteke", rollNo: "24HS10027", category: "Core" },
+            { name: "Kamlesh Patil", rollNo: "24MI10052", category: "Core" },
+            { name: "Kartikeyan Kumar Sahu", rollNo: "24MI10010", category: "Core" },
+            { name: "Kripanshu", rollNo: "24AR10005", category: "Core" },
+            { name: "Nitish Jindal", rollNo: "24MF10045", category: "Core" },
+            { name: "Om Upadhyay", rollNo: "24CH10107", category: "Core" },
+            { name: "Paras Kulkarni", rollNo: "24EE10064", category: "Core" },
+            { name: "Srikanth", rollNo: "24AE10036", category: "Core" },
+            { name: "Prajyot More", rollNo: "24GG10028", category: "Core" },
+            { name: "Rakshita", rollNo: "24PH10037", category: "Core" },
+            { name: "Rehan Wagadia", rollNo: "24AG10061", category: "Core" },
+            { name: "Revanth Kumar Kalla", rollNo: "24EE10062", category: "Core" },
+            { name: "Ritesh Thosare", rollNo: "24MI10086", category: "Core" },
+            { name: "Rushil Ajaria", rollNo: "24CE10094", category: "Core" },
+            { name: "Samar Pratap Singh Shekhawat", rollNo: "24CE10095", category: "Core" },
+            { name: "Samyak Shitalkumar Lahoti", rollNo: "24ME10141", category: "Core" },
+            { name: "Sanya Aggarwal", rollNo: "24BT10056", category: "Core" },
+            { name: "Shikhar Srivastava", rollNo: "24ME10148", category: "Core" },
+            { name: "Shrutika Jadhav", rollNo: "24ME10151", category: "Core" },
+            { name: "Snehjeet Ambagade", rollNo: "24CE10107", category: "Core" },
+            { name: "Soham Pradeep Kulkarni", rollNo: "24AG10076", category: "Core" },
+            { name: "Srujan Khairnar", rollNo: "24IM10039", category: "Core" },
+            { name: "Udaysingh Parihar", rollNo: "24CY10042", category: "Core" },
+            { name: "Vrinda Singh", rollNo: "24MI10110", category: "Core" },
+            { name: "Yash Agrawal", rollNo: "24AG10087", category: "Core" },
+            { name: "Yash Khandelwal", rollNo: "24MI10111", category: "Core" },
+            
+            // Design students
+            { name: "Ayush Yadav", rollNo: "24MI10006", category: "Design" },
+            { name: "Bhukya Hyndavi", rollNo: "24ME10068", category: "Design" },
+            { name: "Lakshya Jain", rollNo: "24MI10061", category: "Design" },
+            { name: "N. Sharan", rollNo: "24EE10070", category: "Design" },
+            { name: "Pavish R", rollNo: "24ME10127", category: "Design" },
+            { name: "Prabhudatta Sahu", rollNo: "24HS10048", category: "Design" },
+            { name: "Pranjal Garhwal", rollNo: "24ME10130", category: "Design" },
+            { name: "Pratik Sirsath", rollNo: "24MT10082", category: "Design" },
+            { name: "Sohaam Kulkarni", rollNo: "24AG10075", category: "Design" },
+            { name: "Soumili Mandal", rollNo: "24MT10084", category: "Design" },
+            { name: "Tanmay Nagpal", rollNo: "24AE10060", category: "Design" },
+            { name: "Vinit Patil", rollNo: "24IM10069", category: "Design" },
+            
+            // Web students
+            { name: "Deepanshu Olakh", rollNo: "24CS10042", category: "Web" },
+            { name: "Harsh Chauhan", rollNo: "24NA10028", category: "Web" },
+            { name: "Rishab Kundu", rollNo: "24CH10011", category: "Web" },
+            { name: "Shubh Prasad", rollNo: "24AG10008", category: "Web" },
+            { name: "Sumit Raut", rollNo: "24AE10058", category: "Web" },
+            { name: "T N Charith", rollNo: "24ME10167", category: "Web" },
+            { name: "Tanishq Verma", rollNo: "24AR10008", category: "Web" },
+            { name: "Tanish", rollNo: "24EC10139", category: "Web" },
+            { name: "Versa", rollNo: "24HS10059", category: "Web" },
+            { name: "Yash Gupta", rollNo: "24CE10118", category: "Web" }
+        ];
+
+        // Initialize page
+        function init() {
+            renderStudents();
+        }
+
+        function renderStudents() {
+            const categories = ['Core', 'Design', 'Web'];
+
+            categories.forEach(category => {
+                const categoryStudents = studentsData.filter(s => s.category === category);
+                const tableBody = document.getElementById(`${category.toLowerCase()}TableBody`);
+                
+                tableBody.innerHTML = categoryStudents.map((student, index) => `
+                    <tr>
+                        <td>${index + 1}</td>
+                        <td>${student.name}</td>
+                        <td>${student.rollNo}</td>
+                    </tr>
+                `).join('');
+            });
+        }
+
+        // Initialize the application
+        init();
+    </script>
+</body>
+</html>
